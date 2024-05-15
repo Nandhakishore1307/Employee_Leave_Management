@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.leaveapprovalview">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <HBox layoutX="118.0" layoutY="200.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="295.0" style="-fx-background-color: #FF6347;">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="110.0" layoutX="7.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="148.0" layoutY="50.0" text="Welcome!!" textFill="#151515">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="148.0" layoutY="97.0" prefHeight="30.0" prefWidth="169.0" text="Nandhakishore" textFill="#151515">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="myprofile4" layoutX="46.0" layoutY="237.0" mnemonicParsing="false" onAction="#myprofile4clicked" prefHeight="30.0" prefWidth="189.0" stylesheets="@application.css" text="MY PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="employeeprofile4" layoutX="46.0" layoutY="300.0" mnemonicParsing="false" onAction="#employeeprofile4clicked" prefHeight="31.0" prefWidth="190.0" stylesheets="@application.css" text="EMPLOYEE PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="leaverequest4" layoutX="44.0" layoutY="365.0" mnemonicParsing="false" onAction="#leaverequest4clicked" prefHeight="30.0" prefWidth="190.0" stylesheets="@application.css" text="LEAVE REQUEST">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="44.0" layoutY="431.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="LEAVE APPROAVLS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cmyprofile4" layoutX="44.0" layoutY="494.0" mnemonicParsing="false" onAction="#cmyprofile4cllicked" prefHeight="31.0" prefWidth="190.0" stylesheets="@application.css" text="COMPLETE MY  PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="logout4" layoutX="20.0" layoutY="547.0" mnemonicParsing="false" onAction="#logout4clicked" prefHeight="31.0" prefWidth="82.0" styleClass="close" stylesheets="@application.css" text="LOG OUT" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="600.0" prefWidth="782.0">
+                     <children>
+                        <ImageView fitHeight="86.0" fitWidth="110.0" layoutX="338.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@lknimage.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tableView" layoutY="143.0" prefHeight="457.0" prefWidth="782.0">
+                          <columns>
+                            <TableColumn fx:id="empname" prefWidth="129.59997713565826" text="EMP_NAME" />
+                            <TableColumn fx:id="empphone" prefWidth="109.60000610351562" text="PHONE NUMBER" />
+                              <TableColumn fx:id="fromdate" prefWidth="97.60003662109375" text="FROM DATE" />
+                              <TableColumn fx:id="todate" prefWidth="98.39996337890625" text="TO DATE" />
+                              <TableColumn fx:id="reason" prefWidth="228.80007934570312" text="REASON" />
+                              <TableColumn fx:id="result1" prefWidth="123.99993896484375" text="RESULT" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

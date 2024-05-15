@@ -1,0 +1,17 @@
+
+.close{
+	-fx-background-color:transparent;
+	-fx-cursor:hand;
+}
+.close:hover{
+	-fx-background-color:#ff3547;
+}
+.button{
+	-fx-background-color:transparent;
+	-fx-cursor:hand;
+}
+.button:hover{
+	-fx-background-color:#0096FF
+}
+
+                

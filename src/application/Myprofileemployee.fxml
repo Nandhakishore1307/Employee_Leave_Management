@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpredirectController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #778899;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="90.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="103.0" layoutY="232.0" style="-fx-font-family: algerian; -fx-font-size: 30;" text="MYNAME" />
+                  <Button fx:id="myprofile1" layoutX="77.0" layoutY="300.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="206.0" style="-fx-background-radius: 10; -fx-font-family: elephant;" text="MY PROFILE" />
+                  <Button fx:id="applyleave1" layoutX="77.0" layoutY="371.0" mnemonicParsing="false" onAction="#applyleave1clicked" prefHeight="42.0" prefWidth="206.0" style="-fx-background-radius: 10; -fx-font-family: elephant;" stylesheets="@application.css" text="APPLY LEAVE" />
+                  <Button fx:id="companyleave1" layoutX="80.0" layoutY="443.0" mnemonicParsing="false" onAction="#companyleave1clicked" prefHeight="42.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-font-family: elephant;" stylesheets="@application.css" text="COMPANY LEAVE" />
+                  <Button fx:id="leavehistory1" layoutX="77.0" layoutY="511.0" mnemonicParsing="false" onAction="#leavehistory1clicked" prefHeight="42.0" prefWidth="206.0" style="-fx-background-radius: 10; -fx-font-family: elephant;" stylesheets="@application.css" text="LEAVE HISTORY" />
+                  <Button fx:id="completemyprofile1" layoutX="77.0" layoutY="585.0" mnemonicParsing="false" onAction="#completemyprofile1clicked" prefHeight="42.0" prefWidth="206.0" style="-fx-background-radius: 10; -fx-font-family: elephant;" stylesheets="@application.css" text="COMPLETE MY PROFILE" />
+                  <Button fx:id="logout1" layoutX="21.0" layoutY="645.0" mnemonicParsing="false" onAction="#logout1clicked" prefHeight="35.0" prefWidth="82.0" style="-fx-font-family: elephant; -fx-background-color: #1E90FF;" styleClass="close" stylesheets="@application.css" text="LOG OUT" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="112.0" prefWidth="200.0" style="-fx-font-size: 30; -fx-font-family: broadway;" text="MY DETAILS" />
+                  <Label layoutX="94.0" layoutY="296.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="DATE-OF-BIRTH" />
+                  <Label layoutX="592.0" layoutY="296.0" prefHeight="24.0" prefWidth="106.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="JOINED DATE" />
+                  <Label layoutX="592.0" layoutY="181.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="EMAIL ADDRESS" />
+                  <Label layoutX="358.0" layoutY="181.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="USERNAME" />
+                  <Label layoutX="94.0" layoutY="181.0" prefHeight="18.0" prefWidth="93.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="FULL NAME" />
+                  <Label layoutX="93.0" layoutY="220.0" prefHeight="34.0" prefWidth="180.0" text="My Full Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+                  <Label layoutX="91.0" layoutY="518.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="ADDRESS" />
+                  <Label layoutX="358.0" layoutY="396.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="ANNUAL LEAVE" />
+                  <Label layoutX="91.0" layoutY="396.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="LEAVE ISSUER" />
+                  <ImageView fitHeight="105.0" fitWidth="129.0" layoutX="384.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lknimage.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="358.0" layoutY="296.0" style="-fx-font-size: 20; -fx-font-family: impact;" text="PHONE NUMBER" />
+                  <Label layoutX="91.0" layoutY="555.0" prefHeight="87.0" prefWidth="503.0" text="My Address">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="559.0" layoutY="222.0" prefHeight="34.0" prefWidth="277.0" text="My Email">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="592.0" layoutY="332.0" prefHeight="34.0" prefWidth="180.0" text="My Joined Date">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="332.0" prefHeight="34.0" prefWidth="180.0" text="My Date Of Birth">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="358.0" layoutY="429.0" prefHeight="34.0" prefWidth="180.0" text="20">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="429.0" prefHeight="34.0" prefWidth="180.0" text="My Leave Issuer">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="358.0" layoutY="332.0" prefHeight="34.0" prefWidth="180.0" text="My Phone Number">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="358.0" layoutY="222.0" prefHeight="34.0" prefWidth="180.0" text="My UserName">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</StackPane>

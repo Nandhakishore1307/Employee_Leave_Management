@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableviewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <HBox layoutX="118.0" layoutY="200.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="295.0" style="-fx-background-color: #FF6347;">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="110.0" layoutX="7.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="148.0" layoutY="50.0" text="Welcome!!">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="148.0" layoutY="97.0" prefHeight="30.0" prefWidth="169.0" text="Nandhakishore">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="myprofile3" layoutX="46.0" layoutY="237.0" mnemonicParsing="false" onAction="#myprofile3clicked" prefHeight="30.0" prefWidth="189.0" stylesheets="@application.css" text="MY PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="employeeprofile3" layoutX="46.0" layoutY="300.0" mnemonicParsing="false" onAction="#employeeprofile3clicked" prefHeight="31.0" prefWidth="190.0" stylesheets="@application.css" text="EMPLOYEE PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="44.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: #eae2e2;" text="LEAVE REQUEST">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="leaveapproval3" layoutX="44.0" layoutY="431.0" mnemonicParsing="false" onAction="#leaveapproval3clicked" prefHeight="31.0" prefWidth="190.0" stylesheets="@application.css" text="LEAVE APPROVALS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cmyprofile3" layoutX="44.0" layoutY="494.0" mnemonicParsing="false" onAction="#cmyprofile3clicked" prefHeight="31.0" prefWidth="190.0" stylesheets="@application.css" text="COMPLETE MY  PROFILE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="logout3" layoutX="20.0" layoutY="552.0" mnemonicParsing="false" onAction="#logout3clicked" styleClass="close" stylesheets="@application.css" text="LOG OUT" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="600.0" prefWidth="785.0">
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="103.0" layoutX="352.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@lknimage.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tableView" layoutX="22.0" layoutY="117.0" prefHeight="275.0" prefWidth="758.0">
+                          <columns>
+                            <TableColumn fx:id="empname" prefWidth="155.20000648498535" text="NAME" />
+                            <TableColumn fx:id="empphone" prefWidth="138.4000244140625" text="PHONE NUMBER" />
+                              <TableColumn fx:id="fromdate" prefWidth="130.39996337890625" text="FROM DATE" />
+                              <TableColumn fx:id="todate" prefWidth="117.60006713867188" text="TO DATE" />
+                              <TableColumn fx:id="reason" prefWidth="213.59995117187498" text="REASON" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="approve" layoutX="137.0" layoutY="436.0" mnemonicParsing="false" onAction="#acceptLeave" prefHeight="40.0" prefWidth="190.0" stylesheets="@application.css" text="APPROVE" textFill="#1a1b1a">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="decline" layoutX="460.0" layoutY="436.0" mnemonicParsing="false" onAction="#declineLeave" prefHeight="40.0" prefWidth="190.0" styleClass="close" stylesheets="@application.css" text="DECLINE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
